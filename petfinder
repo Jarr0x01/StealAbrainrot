@@ -217,7 +217,7 @@ end
 
 --// Live Detection for Pets
 workspace.DescendantAdded:Connect(function(obj)
-    task.wait(0.25)
+    task.wait(0.1)
     if obj:IsA("Model") then
         local nameLower = string.lower(obj.Name)
         for _, target in pairs(targetPets) do
